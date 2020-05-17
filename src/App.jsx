@@ -1,9 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { GraphQLClient, ClientContext } from 'graphql-hooks';
 import { ListOfRepositories } from './ListOfRepositories';
 import { ListOfPackages } from './ListOfPackages';
 import { Repository } from './Repository';
-import { useEffect } from 'react/cjs/react.development';
 
 const client = new GraphQLClient({
   url: 'https://api.github.com/graphql',
